@@ -1,0 +1,30 @@
+.allButtons {
+    max-width: 500px;
+    max-height: 600px;
+    margin: 10vh;
+}
+
+.button {
+    line-height: 100px;
+    border: 0.5px black;
+    border-style: solid;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#display {
+    font-size: 20px;
+    text-align: right;
+    line-height: 50px;
+    height: 100px;
+    padding: 16px 8px;
+}
+
+.buttons {
+    display: grid;
+    border-bottom: 1px black;
+    border-left: 1px black;
+    background-color: rgb(169, 181, 238);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
