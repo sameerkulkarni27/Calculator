@@ -1,30 +1,72 @@
-.allButtons {
-    max-width: 500px;
-    max-height: 600px;
-    margin: 10vh;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #283d3d;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.button {
-    line-height: 100px;
-    border: 0.5px black;
-    border-style: solid;
-    text-align: center;
-    cursor: pointer;
-    font-size: 25px;
+button {
+    width: 125px;
+    height: 125px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: gray;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+button.sign {
+    background-color: #9c8a4d;
+}
+
+button.sign:hover {
+    background-color: #afa274;
+}
+
+button.clear {
+    background-color: #b8860b;
+}
+
+button.clear:hover {
+    background-color: #d09e23;
+}
+
+button.equals {
+    background-color: #FF5733;
+}
+
+button.equals:hover {
+    background-color: #f29e8c;
 }
 
 #display {
-    font-size: 20px;
-    text-align: right;
-    line-height: 50px;
-    height: 100px;
-    padding: 16px 8px;
+    width: 750px;
+    font-size: 100px;
+    padding: 20px;
+    text-align: left;
+    border: none;
+    background-color: #3f5f5f;
+    color: white;
 }
 
-.buttons {
+#buttons {
     display: grid;
-    border-bottom: 1px black;
-    border-left: 1px black;
-    background-color: rgb(169, 181, 238);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 0px;
+}
+
+#allButtons {
+    border-radius: 20px;
+    background-color: darkslategray;
+    max-width: 600px;
+    overflow: hidden;
 }
